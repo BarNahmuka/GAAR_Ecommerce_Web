@@ -1,0 +1,106 @@
+.product-detail-page {
+  display: flex;
+  justify-content: flex-start;  /* Align items to the left */
+  padding: 20px;
+  margin-right: 100px;  /* Space on the right to prevent stretching fully */
+}
+
+.product-images-container {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.product-images-stack {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.product-image {
+  background-color: #eeeded;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+.product-image-cover {
+  background-color: #eeeded;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-info {
+  flex-grow: 1;
+  padding-left: 50px;
+  max-width: 250px; 
+  margin-left: 80px;
+}
+
+.product-info h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.product-title {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.product-category {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  width: 80% !important;             
+  padding: 15px !important;          
+  background-color: #007BFF !important;
+  color: white !important;       
+  border: none !important;         
+  cursor: pointer !important;         
+  font-size: 18px !important;        
+  text-transform: uppercase !important; 
+  margin-left: 8px auto !important;       
+  display: block !important;          
+  border-radius: 50px !important;     
+  transition: background-color 0.3s ease !important; 
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3 !important;  
+}
+
+.product-description {
+  font-size: 20px;            
+  font-family: 'Arial';
+  line-height: 1.5;               
+  margin-bottom: 20px;       
+  word-break: break-word; 
+       
+}
+
+.admin-actions button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-actions button:nth-child(2) {
+  background-color: #4CAF50;
+}

@@ -1,0 +1,29 @@
+.alert {
+    padding: 1rem !important;
+    margin: 0 !important; 
+    border-radius: 4px !important;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed !important; 
+    top: 0 !important; 
+    left: 0 !important; 
+    right: 0 !important; 
+    transform: none; 
+    z-index: 9999 !important; 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+    background-color: inherit; 
+}
+
+.alert--success {
+    background-color: #20bf6b !important; 
+}
+
+.alert--error {
+    background-color: #eb4d4b !important;
+}
+
+.alert.hidden {
+    opacity: 0;
+    transform: translateY(-100%); 
+}

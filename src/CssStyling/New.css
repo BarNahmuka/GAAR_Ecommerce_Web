@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 60%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Ensure the background is white */
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.passwordSection {
+  margin-bottom: 15px;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.passwordInput {
+  flex: 1;
+}
+
+.passwordToggleButton {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin-left: 10px;
+  font-size: 14px;
+  height: 100%; /* Make sure the button height matches the input height */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.saveButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.cancelButton {
+  background-color: #f44336; /* Red background */
+  border: none;
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+.saveButton {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+}

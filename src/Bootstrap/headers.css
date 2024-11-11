@@ -1,0 +1,8 @@
+.nav-link {
+  color: #fff; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.nav-link:hover {
+  color: black; 
+}

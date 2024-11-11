@@ -1,0 +1,74 @@
+/* Authentication.css */
+
+.Form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start (top) */
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    width: 95%; /* Increase width for a more spacious form */
+    max-width: 600px; /* Adjust max-width for a larger form */
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    margin-top: 40px; /* Add space at the top of the form */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.register-text a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

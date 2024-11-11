@@ -1,0 +1,36 @@
+.container-fluid {
+  background-color: #f8f9fa;
+}
+
+footer {
+  padding: 40px 80px;  
+  background-color: #f8f9fa;  
+}
+
+footer .col {
+  margin-bottom: 1rem;
+}
+
+footer h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+footer .nav-link {
+  color: #6c757d;
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  transition: color 0.3s ease;
+}
+
+footer .nav-link:hover {
+  color: #343a40;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer .col {
+      text-align: center;
+  }
+}
