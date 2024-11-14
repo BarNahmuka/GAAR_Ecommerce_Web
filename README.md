@@ -4,7 +4,7 @@ This project is a complete e-commerce solution with a Node.js and Express backen
 
 ## Features
 
-User Management: Registration, login, profile updates, and password management.
+User Management: Registration, login, profile updates, and password management. 
 Product Catalog: CRUD operations with filtering, and detailed views for individual products.
 Shopping Cart and Checkout: Add/remove items, adjust quantities, and proceed to checkout with Stripe.
 Order Tracking: View order history and individual order details.
