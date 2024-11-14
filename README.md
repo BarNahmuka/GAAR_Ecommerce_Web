@@ -1,6 +1,8 @@
 # Project Overview
 
-This project is a complete e-commerce solution with a Node.js and Express backend and a React frontend. It manages user accounts, product listings, shopping carts, orders, and payments via Stripe. The frontend is built for a smooth user experience with a modular component structure and custom CSS.
+This project is a complete e-commerce solution with a Node.js and Express backend and a React frontend. 
+It manages user accounts, product listings, shopping carts, orders, and payments via Stripe. 
+The frontend is built for a smooth user experience with a modular component structure and custom CSS.
 
 ## Features
 
