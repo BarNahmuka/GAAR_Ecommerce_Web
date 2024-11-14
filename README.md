@@ -11,7 +11,7 @@ Product Catalog: CRUD operations with filtering, and detailed views for individu
 Shopping Cart and Checkout: Add/remove items, adjust quantities, and proceed to checkout with Stripe.  <br />
 Order Tracking: View order history and individual order details. <br />
 
-##Key Frontend Components
+## Key Frontend Components
 
 Home: Landing page with introductory information. <br />
 Login and Register: User authentication and account creation. <br />
