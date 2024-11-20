@@ -2,7 +2,8 @@ import React from "react";
 import PromoVid from '../Assets/PromoVid.mp4';
 import '../Bootstrap/carousel.css'; 
 import '../Bootstrap/carousel.rtl.css'; 
-import '../CssStyling/Home.css'; // Your custom styles for Home component
+import '../CssStyling/Home.css'; 
+import { Card } from "react-bootstrap";
 
 function Home() {
   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
@@ -12,23 +13,20 @@ function Home() {
 
   return (
     <>
-      {/* Video Section */}
-      <section>
-        <video autoPlay loop muted className="background-video w-100" style={{ height: "32rem" }}>
+      <section className="home-container mb-0 pb-0">
+        <video
+          autoPlay
+          loop
+          muted
+          className="background-video">
           <source src={PromoVid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="container">
-          <div className="carousel-caption text-start">
-            <h1>Welcome to the E-commerce site</h1>
-            {!isLoggedIn && (
-              <p><button onClick={handleLogin} className="btn btn-primary btn-lg">Get Started!</button></p>
-            )}
-          </div>
+        <div className="content">
+          <h1>Welcome to the E-commerce site</h1>
         </div>
       </section>
 
-      {/* Marketing Section */}
       <section className="container marketing mt-5">
         <div className="row">
           <div className="col-lg-4 text-center">
@@ -52,30 +50,76 @@ function Home() {
         </div>
       </section>
 
-      <hr className="featurette-divider" />
+  <section className="background-image-section">
+  <div className="py-5">
+    <h1 className="display-5 fw-bold text-white">Ready to get started?</h1>
+    <div className="col-lg-6 mx-auto">
+      <p className="fs-5 mb-4">
+        Explore millions of products from trusted suppliers by signing up
+        today!
+      </p>
+      <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        {!isLoggedIn && (
+          <button
+            onClick={handleLogin}
+            className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+            Get Started!
+          </button>
+        )}
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Featurette Section */}
-      <div className="row featurette">
-        <div className="col-md-7">
-          <h2 className="featurette-heading">First featurette heading. <span className="text-muted">It’ll blow your mind.</span></h2>
-          <p className="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-        </div>
-        <div className="col-md-5">
-          <img className="img-fluid mx-auto" src="feature-image-1.jpg" alt="Feature 1" />
+   <hr className="featurette-divider" />
+
+    <div class="row row-md-3 ">
+      <h1>Source direct-from-factory</h1>
+      <div class="col-md-4">
+        <div class="coverOne">
+          <h4>Get samples</h4>
         </div>
       </div>
-
-      <hr className="featurette-divider" />
-
-      <div className="row featurette">
-        <div className="col-md-7 order-md-2">
-          <h2 className="featurette-heading">Oh yeah, it’s that good. <span className="text-muted">See for yourself.</span></h2>
-          <p className="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-        </div>
-        <div className="col-md-5 order-md-1">
-          <img className="img-fluid mx-auto" src="feature-image-2.jpg" alt="Feature 2" />
+      <div class="col-md-4">
+        <div class="coverTwo">
+          <h4>Connect with two-ranking manufacturers</h4>
         </div>
       </div>
+      <div class="col-md-4">
+        <div class="coverThree">
+          <h4>Take factory live tours</h4>
+        </div>
+      </div>
+     </div>
+
+      <section className="cover-image">
+      <div className="cover-content">
+        <h2 className="security-floor_title">
+          Trade with confidence from <br /> production quality to purchase protection
+        </h2>
+      </div>
+      <div className="row align-items-stretch justify-content-center mt-5">
+        <div className="col-md-6 col-lg-6">
+          <div className="h-100 p-5 border rounded-3 square-box">
+            <h2>Verified Supplier</h2>
+            <p>
+              Connect with a variety of suppliers with third-party-verified credentials and capabilities. Look for the "Verified" logo to begin sourcing with experienced suppliers your business could rely on.
+            </p>
+            <button className="btn btn-outline-light" type="button">Learn More</button>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-6">
+          <div className="h-100 p-5 border rounded-3 square-box">
+            <h2>Trade Assurance</h2>
+            <p>
+              Source confidently with access to secure payment options, protection against product or shipping issues, and mediation support for any purchase-related concerns when you order and pay on GAAR.
+            </p>
+            <button className="btn btn-outline-light" type="button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
       <hr className="featurette-divider" />
 
@@ -87,9 +131,7 @@ function Home() {
         <div className="col-md-5">
           <img className="img-fluid mx-auto" src="feature-image-3.jpg" alt="Feature 3" />
         </div>
-      </div>
-
-     
+      </div> 
     </>
   );
 }
