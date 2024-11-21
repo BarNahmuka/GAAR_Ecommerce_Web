@@ -3,7 +3,6 @@ import PromoVid from '../Assets/PromoVid.mp4';
 import '../Bootstrap/carousel.css'; 
 import '../Bootstrap/carousel.rtl.css'; 
 import '../CssStyling/Home.css'; 
-import { Card } from "react-bootstrap";
 
 function Home() {
   const isLoggedIn = localStorage.getItem("loggedIn") === "true";
@@ -50,19 +49,20 @@ function Home() {
         </div>
       </section>
 
-  <section className="background-image-section">
+      <section className="background-image-section">
   <div className="py-5">
-    <h1 className="display-5 fw-bold text-white">Ready to get started?</h1>
+    <h1 className="display-3 fw-bold text-white mb-4">Ready to get started?</h1>
     <div className="col-lg-6 mx-auto">
-      <p className="fs-5 mb-4">
-        Explore millions of products from trusted suppliers by signing up
-        today!
-      </p>
+      <div className="d-flex justify-content-center align-items-center mb-4">
+        <p className="fs-2 mb-0 text-center text-nowrap">
+          Explore millions of products from trusted suppliers by signing up today!
+        </p>
+      </div>
       <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
         {!isLoggedIn && (
           <button
             onClick={handleLogin}
-            className="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+            className="btn btn-outline-info btn-lg px-5 py-3 me-sm-3 fw-bold">
             Get Started!
           </button>
         )}
